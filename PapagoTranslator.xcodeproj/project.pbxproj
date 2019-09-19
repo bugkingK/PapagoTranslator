@@ -3,27 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D23BB55623335EBD00329BC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23BB55523335EBD00329BC1 /* AppDelegate.swift */; };
-		D23BB55823335EBD00329BC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23BB55723335EBD00329BC1 /* SceneDelegate.swift */; };
 		D23BB55A23335EBD00329BC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23BB55923335EBD00329BC1 /* ViewController.swift */; };
 		D23BB55D23335EBD00329BC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23BB55B23335EBD00329BC1 /* Main.storyboard */; };
 		D23BB55F23335EBF00329BC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23BB55E23335EBF00329BC1 /* Assets.xcassets */; };
 		D23BB56223335EBF00329BC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23BB56023335EBF00329BC1 /* LaunchScreen.storyboard */; };
+		D23BB56B23335F3800329BC1 /* PapagoTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23BB56A23335F3800329BC1 /* PapagoTranslator.swift */; };
+		D23BB56E233362B100329BC1 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = D23BB56D233362B100329BC1 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D23BB55223335EBD00329BC1 /* PapagoTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PapagoTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23BB55523335EBD00329BC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D23BB55723335EBD00329BC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D23BB55923335EBD00329BC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D23BB55C23335EBD00329BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D23BB55E23335EBF00329BC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D23BB56123335EBF00329BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D23BB56323335EBF00329BC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D23BB56A23335F3800329BC1 /* PapagoTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapagoTranslator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23BB56E233362B100329BC1 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +58,8 @@
 		D23BB55423335EBD00329BC1 /* PapagoTranslator */ = {
 			isa = PBXGroup;
 			children = (
+				D23BB56923335F2D00329BC1 /* Sources */,
 				D23BB55523335EBD00329BC1 /* AppDelegate.swift */,
-				D23BB55723335EBD00329BC1 /* SceneDelegate.swift */,
 				D23BB55923335EBD00329BC1 /* ViewController.swift */,
 				D23BB55B23335EBD00329BC1 /* Main.storyboard */,
 				D23BB55E23335EBF00329BC1 /* Assets.xcassets */,
@@ -65,6 +67,14 @@
 				D23BB56323335EBF00329BC1 /* Info.plist */,
 			);
 			path = PapagoTranslator;
+			sourceTree = "<group>";
+		};
+		D23BB56923335F2D00329BC1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D23BB56A23335F3800329BC1 /* PapagoTranslator.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = PapagoTranslator;
+			packageProductDependencies = (
+				D23BB56D233362B100329BC1 /* SwiftyJSON */,
+			);
 			productName = PapagoTranslator;
 			productReference = D23BB55223335EBD00329BC1 /* PapagoTranslator.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +124,9 @@
 				Base,
 			);
 			mainGroup = D23BB54923335EBD00329BC1;
+			packageReferences = (
+				D23BB56C233362B100329BC1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = D23BB55323335EBD00329BC1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +155,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D23BB55A23335EBD00329BC1 /* ViewController.swift in Sources */,
+				D23BB56B23335F3800329BC1 /* PapagoTranslator.swift in Sources */,
 				D23BB55623335EBD00329BC1 /* AppDelegate.swift in Sources */,
-				D23BB55823335EBD00329BC1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6QG49X22JS;
 				INFOPLIST_FILE = PapagoTranslator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6QG49X22JS;
 				INFOPLIST_FILE = PapagoTranslator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D23BB56C233362B100329BC1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D23BB56D233362B100329BC1 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D23BB56C233362B100329BC1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D23BB54A23335EBD00329BC1 /* Project object */;
 }
