@@ -14,7 +14,7 @@ public class PapagoTranslator {
     /// API structure.
     private struct API {
        /// Base Google Vision API url.
-       static let base = "https://openapi.naver.com/v1/language/translate"
+       static let base = "https://openapi.naver.com/v1/papago/n2mt"
        
        /// endpoint.
        struct translate {
